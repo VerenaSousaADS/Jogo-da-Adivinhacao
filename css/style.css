@@ -18,6 +18,10 @@ body{
     height: 100vh;
 }
 
+body, button, input{
+    font-family: 'DM Sans', sans-serif;
+}
+
 main{
     background: #FFFFFF;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -28,4 +32,24 @@ main{
 
     /* O professor Mayk sugeriu colocar um margin-top, pois pela impressão dele a tag não estava bem centralizada, mas pra mim estava ótimo então optei por não colocar */
     /* margin-top: -12rem; */
+
+    text-align: center;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+h1, p{
+    color: #34355B; 
+}
+
+p{
+    opacity: .8;
+}
+
+form{
+    margin-top: 4.8rem;
 }
