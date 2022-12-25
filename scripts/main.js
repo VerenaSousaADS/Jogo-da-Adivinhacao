@@ -1,3 +1,5 @@
+//PEsquisa através do seletor css
+
 const screen1 = document.querySelector('.screen1')
 const screen2 =  document.querySelector('.screen2')
 const randomNumber = Math.round(Math.random() * 10)
@@ -18,10 +20,8 @@ function handleTryClick(event){
         // e se remove a classe hide da classe screen2
         screen2.classList.remove('hide')
 
-        // no h2 se insere o texto a seguir
-        document.querySelector(
-            '.screen2 h2'
-        ).innerText = `Acertou em ${xAttempts} tentativas`
+        // no h2 se insere o texto a seguir (fazendo a pesquisa dentro do elemento)
+        screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`
     }
     
     // a variável xAttempts é iterada e a variavel inputNuber é zerada
